@@ -21,7 +21,7 @@ El archivo CSS (`style.css`) contiene los estilos para la presentación de la ap
 
 ### HTML
 
-## Autor
+## ALumno:
 - Creado por Wiston Lopez.
 - Proyecto Challenge modulo 9 Entrega del desafío
 - Curso G7-ONE
