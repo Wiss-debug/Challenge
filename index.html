@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptar/Desencriptar</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div style="flex-direction:column-reverse;">
+            <img class="presentacion__logo" src="./assets/Logo.png" alt="Logo">
+
+        </div>
+        <div class="left-panel">
+            <textarea class="text-input" id="inputText" placeholder="ingrese el texto aqui" oninput="checkInput()" onpaste="handlePaste()"></textarea>
+            <div class="info">Solo letras minúsculas y sin acentos</div>
+            <div class="buttons">
+                <button class="button" onclick="encriptar()">Encriptar!</button>
+                <button class="button secondary" id="desencriptarButton" onclick="desencriptar()" disabled>Desencriptar!</button>
+            </div>
+        </div>
+        <div class="right-panel" id="divImg">
+		     <div class="message">
+                <img src="./assets/Muñeco.png" class="imgTexto" alt="Ningún mensaje encontrado">
+                <p> <b>Ningún mensaje fue encontrado</b></p>
+                <p class="text">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+		</div>
+		<div class="right-panel" id="divCopiar" style="display: none;">
+            <textarea class="output-box" id="outputText" readonly></textarea>
+            <div class="copy-button">
+                <button class="button secondary" onclick="copiar()">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

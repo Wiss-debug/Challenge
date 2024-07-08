@@ -1,0 +1,162 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F7FA;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.presentacion__logo {
+    position: fixed;
+    top: 35px;
+    left: 5px;
+    font-size: 16px; 
+    color: #0A3871;
+    
+}
+
+.left-panel {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.right-panel {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin: 40px;
+    margin-bottom: 70px;
+    
+
+}
+
+.text-input {
+    width: 80%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;  
+    margin-left: 30px;
+    margin-top: 80px;
+     
+    
+}
+
+.output-box{
+    width: 80%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 30px;
+    font-size: 16px;
+    
+}
+
+.buttons, .copy-button {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.button, .copy-button .button {
+    background-color: #0047BA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button.secondary {
+    background-color: #E0E0E0;
+    color: black;
+}
+
+.info {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #495057;
+}
+
+.text {
+    color: #495057;
+    margin-top: 20px;
+    font-size: 12px;
+    justify-content: space-between;
+
+}
+
+.logo {
+    font-size: 40px;
+    color: #0047BA;
+    margin-bottom: 50px;
+    
+}
+
+@media (max-width: 1024px ) {
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-panel {
+        margin: 60px;
+        flex-direction: column;
+    }
+
+    .imgTexto {
+        display: none;
+    }
+
+    .left-panel{
+        flex-direction: column;
+    }
+   
+}
+@media (max-width: 480px ) {
+
+    .container{
+        flex-direction: column;
+        gap: 20px
+        
+    }
+
+    .right-panel {
+        margin: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgTexto {
+        display: none;
+    }
+
+    .left-panel{
+        flex-direction: column;
+        
+    }
+
+    .buttons{
+        flex-direction: column; 
+               
+    }
+
+    .text{
+        flex-direction: column; 
+    }
+}
