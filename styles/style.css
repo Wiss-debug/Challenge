@@ -1,5 +1,4 @@
 body {
-    display: flex;
     justify-content: space-between;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -105,6 +104,14 @@ body {
     color: #0047BA;
     margin-bottom: 50px;
     
+}
+
+.footer {
+    text-align: center; 
+    background-color: #ba6c00; 
+    padding: 10px; 
+    color: #E0E0E0; 
+    width: 100%; 
 }
 
 @media (max-width: 1024px ) {
