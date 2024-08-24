@@ -34,8 +34,6 @@ function desencriptar() {
     toggleDesencriptarButton(false);
 }
 
-
-
 function copiar() {
     var output = document.getElementById('outputText');
     output.select();
@@ -46,7 +44,7 @@ function copiar() {
 
 function checkInput() {
     var input = document.getElementById('inputText').value;
-    if (input.trim() !== '') {
+    if (/^[a-z\s]*$/.test(input) && input.trim() !== '') {
         toggleDesencriptarButton(true);
     } else {
         toggleDesencriptarButton(false);
